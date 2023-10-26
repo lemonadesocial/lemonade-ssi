@@ -5,8 +5,10 @@ import { logger } from './helpers/pino';
 
 import * as admin from './services/admin';
 import * as db from './helpers/db';
+import * as network from './services/network';
 
 import { livezPlugin } from './plugins/livez';
+import { passportPlugin } from './plugins/passport';
 
 export async function createApp() {
   const app = fastify({
@@ -18,7 +20,10 @@ export async function createApp() {
     try {
       await db.connect();
 
-      await admin.start();
+      await Promise.all([
+        admin.start(),
+        network.init(),
+      ]);
     } catch (err) {
       app.log.fatal(err);
       process.exit(1);
@@ -37,6 +42,7 @@ export async function createApp() {
   });
 
   await app.register(livezPlugin);
+  await app.register(passportPlugin);
 
   return app;
 }
