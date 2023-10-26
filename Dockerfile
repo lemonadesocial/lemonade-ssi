@@ -3,6 +3,7 @@
 FROM public.ecr.aws/docker/library/node:20-alpine as build
 WORKDIR /app
 
+RUN apk add --no-cache build-base cairo-dev pango-dev librsvg-dev
 COPY . .
 RUN yarn install --frozen-lockfile --ignore-optional && \
     yarn build && \
@@ -12,6 +13,7 @@ RUN yarn install --frozen-lockfile --ignore-optional && \
 FROM public.ecr.aws/docker/library/node:20-alpine as app
 WORKDIR /app
 
+RUN apk add --no-cache cairo pango librsvg
 COPY --from=build /app .
 
 CMD ["node", "dist/bin/app.js"]
