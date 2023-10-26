@@ -71,4 +71,4 @@ jobs:
 
       - name: Verify
         run: |
-          kubectl rollout status --namespace $NAMESPACE deployment/ssi ssi
+          kubectl rollout status --namespace $NAMESPACE deployment/ssi
