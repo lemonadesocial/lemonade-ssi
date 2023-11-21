@@ -26,9 +26,9 @@ export async function createApp() {
   });
 
   app.addHook('onClose', async () => {
-    await db.disconnect();
-
     await admin.stop();
+
+    await db.disconnect();
   });
 
   await app.register(fastifyCors, {
