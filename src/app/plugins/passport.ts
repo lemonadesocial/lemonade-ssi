@@ -14,6 +14,8 @@ import { baseAbi, passportAbi } from '../constants';
 const fonts = path.join(__dirname, '../../../fonts');
 Canvas.registerFont(fonts + '/Agdasima.ttf', { family: 'Agdasima' });
 Canvas.registerFont(fonts + '/Bungee.ttf', { family: 'Bungee' });
+Canvas.registerFont(fonts + '/Coda.ttf', { family: 'Coda' });
+Canvas.registerFont(fonts + '/Roboto-Mono.ttf', { family: 'Roboto Mono' });
 
 const tokenIdHandler: RouteHandlerMethod = async (request, reply) => {
   const params = request.params as { group: string; tokenId: bigint };
