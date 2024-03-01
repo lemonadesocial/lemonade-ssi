@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/lemonadesocial/lemonade-ssi/compare/v1.1.0...v1.2.0) (2024-03-01)
+
+
+### Features
+
+* add Coda and Roboto Mono fonts ([dcbf0e5](https://github.com/lemonadesocial/lemonade-ssi/commit/dcbf0e5408e986560e85c532ae2b1c510857bae8))
+
 ## [1.1.0](https://github.com/lemonadesocial/lemonade-ssi/compare/v1.0.0...v1.1.0) (2023-11-23)
 
 
