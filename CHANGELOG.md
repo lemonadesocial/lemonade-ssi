@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/lemonadesocial/lemonade-ssi/compare/v1.2.0...v1.3.0) (2024-03-07)
+
+
+### Features
+
+* add Inter and Poppins fonts ([5b46dd1](https://github.com/lemonadesocial/lemonade-ssi/commit/5b46dd1c3890f63b2e40d542520d451e33e56307))
+
 ## [1.2.0](https://github.com/lemonadesocial/lemonade-ssi/compare/v1.1.0...v1.2.0) (2024-03-01)
 
 
