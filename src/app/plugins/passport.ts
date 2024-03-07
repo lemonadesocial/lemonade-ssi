@@ -15,6 +15,8 @@ const fonts = path.join(__dirname, '../../../fonts');
 Canvas.registerFont(fonts + '/Agdasima.ttf', { family: 'Agdasima' });
 Canvas.registerFont(fonts + '/Bungee.ttf', { family: 'Bungee' });
 Canvas.registerFont(fonts + '/Coda.ttf', { family: 'Coda' });
+Canvas.registerFont(fonts + '/Inter.ttf', { family: 'Inter' });
+Canvas.registerFont(fonts + '/Poppins.ttf', { family: 'Poppins' });
 Canvas.registerFont(fonts + '/Roboto-Mono.ttf', { family: 'Roboto Mono' });
 
 const tokenIdHandler: RouteHandlerMethod = async (request, reply) => {
